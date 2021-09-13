@@ -19,6 +19,7 @@
 #input-field:hover {
   transform: scale(1.02);
   box-shadow: 4px 4px 7px gray;
+  transition: 0.5s;
 }
 /* search field style  */
 .search-field { 
@@ -44,6 +45,7 @@
   transform: scale(1.02);
   box-shadow: 4px 4px 7px gray;
   border: 1px solid #76323F;
+  transition: 0.5s;
 }
 
 /* all products style  */
