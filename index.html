@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Net To Door Store</title>
+  <!-- Custom CSS  -->
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -18,23 +19,34 @@
 </head>
 
 <body>
-  <header></header>
-  <main class="main">
-    <h1> <span class="blue">Net </span> To <span class="blue"> Door</span> Store</h1>
+  <!-- header part start -->
+  <header class="header">
+    <!-- site name -->
+    <h1> <span class="blue">Net </span> To <span class="oxBloodColor"> Door</span> Store</h1>
+    <!-- search field start  -->
     <div class="search-field">
       <div class="search-box">
         <input id="input-field" placeholder="Enter product name" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
+        <button type="button" class="btn search-button" data-toggle="button" aria-pressed="false" autocomplete="off"
+          id="search-btn" onclick="loadProducts()">
           Search
         </button>
+        <!-- search field end  -->
       </div>
     </div>
+  </header>
+  <!-- header part end  -->
+
+  <!-- main body part start  -->
+  <main class="main">
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
+        <!-- search results start  -->
         <div id="all-products" class="">
         </div>
+        <!-- search results end  -->
       </div>
+      <!-- My-cart start  -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
           <table class="table">
@@ -49,46 +61,51 @@
             </thead>
             <tbody>
               <tr>
+                <!-- total added product  -->
                 <th>Total Added-Products:</th>
                 <td> &nbsp; <span id="total-Products"> 0</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
+                <!-- total Price  -->
                 <th>Price:</th>
                 <td>$ <span id="price">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
+                <!-- Delivery-Charge -->
                 <th>Delivery-Charge:</th>
-                <td>$ <span id="delivery-charge">20</span></td>
+                <td>$ <span id="delivery-charge">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
+                <!-- Total tax -->
                 <th>Total-Tax:</th>
                 <td>$ <span id="total-tax">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
+                <!-- Grand Total -->
                 <th scope="row">Total</th>
                 <td colspan="2">$ <span id="total">0</span></td>
                 <td></td>
               </tr>
             </tbody>
           </table>
+          <!-- Buy now button  -->
           <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+            <button id="buy-now" class="btn text-center">Buy Now</button>
           </div>
         </div>
+        <!-- My-cart end  -->
       </div>
     </div>
   </main>
-  <footer></footer>
-
-  <!-- add javascript  file  -->
+  <!-- JavaScript  file  -->
   <script src="./js/app.js"></script>
 </body>
 
